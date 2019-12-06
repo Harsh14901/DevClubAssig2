@@ -229,12 +229,11 @@ header li a:active{
 	border-top-left-radius: 50px;
 	border-bottom-right-radius: 150px;
 	margin-bottom: 10px;
-	transition: font-weight 0.5s, letter-spacing 0.3s;	
+	transition: font-weight 0.5s;	
 }
 
 #bio1:hover, #bio2:hover{
 	font-weight: bold;
-	letter-spacing: 0.05em;
 }
 
 
@@ -343,3 +342,49 @@ img{
 #hobby content{
 	margin: 1vw;
 }
+
+#social{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.fa {
+	margin: 10px;
+	border: 2px solid black;
+	/*border-radius: 1000px;	*/
+	padding-top: 1em;
+  font-size: 2.5em;
+  width: 5vw;
+  height: 5.2vh;
+  text-align: center;
+  text-decoration: none;
+  transition: opacity 0.5s;
+
+}
+
+.fa:hover{
+	opacity: 0.5;
+}
+
+.fa-facebook {
+  background: #3B5998;
+}
+
+.fa-github{
+	background-color: black;
+}
+
+.fa-reddit{
+	background-color: #ff4500;
+}
+
+.fa-instagram{
+	background-color: #bc2a8d;
+}
+
+.fa-google{
+	background-color: #dd4b39;
+}
+
+
