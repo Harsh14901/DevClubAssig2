@@ -50,6 +50,7 @@ header li{
 
 header li a,a:visited{
 	font-size:2.5vh;
+	transition: font-size 0.4s, border 0.3s linear,background-color 0.3s;
 	text-decoration: none;
 	color:white;
 	display: block;
@@ -64,7 +65,7 @@ header li a:hover{
 	background-color: white;
 	text-decoration: none;
 	box-shadow: 5px 5px 5px black;
-	border-bottom: 3px solid #BABDB6FF;
+	border-bottom: 5px solid black;
 	border-top: 3px solid #BABDB6FF;
 	font-size: 2.75vh;
 	font-weight: bold;
@@ -89,7 +90,6 @@ header li a:active{
     background-size: 100vw 100vh;
     background-repeat: no-repeat;
     height: 100vh;
-    z-index: -1;
     align-items: center;
 }
 
@@ -98,19 +98,35 @@ header li a:active{
     height: auto;
     border-radius: 1000px;
     border: 2px solid white;
-    filter: drop-shadow(15px 0px 10px);
+    filter: drop-shadow(0 0px 10px);
     opacity: 0.9;
-    z-index: 0;
+    transition: transform 0.7s, filter 0.5s, border-color 0.5s;
 }
 
+
 .profile_pic h1{
+	letter-spacing: normal;
 	word-break: break-word;
     font-family: 'Aldrich';
     text-align: center;
     font-size: 7vw;
     color: white;
     text-shadow: 0 0 15px black;
-	
+    transition: letter-spacing 0.3s, text-shadow 0.2s, transform 0.2s
+}
+
+.profile_pic h1:hover{
+	letter-spacing: 0.1em;
+	text-shadow:0 0 25px white;
+	transform: scale(1.1);
+	-webkit-text-stroke-width: 1.5px;
+	-webkit-text-stroke-color: black;
+}
+
+.profile_pic img:hover{
+	transform: scale(1.1);
+	filter: drop-shadow(0 0 20px white);
+	border-color: black;
 }
 
 
@@ -164,15 +180,24 @@ header li a:active{
 
 #bio h1{
 	padding: 20px;
-	padding-top: 70px;
 	font-size: 2em;
 	text-align: center;
-	margin-top: 0px;
-	margin-left: -10px;
+	margin:auto;
+	margin-top: 10px;
 	font-weight: bold;
 	width: 100%;
+	outline-offset: 2px;
+	transition: padding 0.4s,border 0.4s, outline-offset 0.2s;
 }
 
+#bio h1:hover{
+	background-color: white;
+	color:black;
+	border:2px solid black;
+	width: 40%;
+	outline: 2px solid white;
+	outline-offset: 10px;
+}
 
 #bio1{
 	margin-top: 30px;
@@ -187,6 +212,7 @@ header li a:active{
 	border-top-left-radius: 150px;
 	border-top-right-radius: 50px;
 	border-bottom-left-radius: 150px;
+	transition: font-weight 0.5s, letter-spacing 0.3s;	
 }
 
 #bio2{
@@ -203,6 +229,12 @@ header li a:active{
 	border-top-left-radius: 50px;
 	border-bottom-right-radius: 150px;
 	margin-bottom: 10px;
+	transition: font-weight 0.5s, letter-spacing 0.3s;	
+}
+
+#bio1:hover, #bio2:hover{
+	font-weight: bold;
+	letter-spacing: 0.05em;
 }
 
 
@@ -247,6 +279,12 @@ header li a:active{
 	font-size: 2.5vw;
 	box-shadow: 0 0 2px black;
 	word-wrap: break-word;
+	transition: color 0.4s, background-color 0.4s;
+}
+
+.content h2:hover{
+	background-color: #555753FF;
+	color:white;
 }
 
 .right{
