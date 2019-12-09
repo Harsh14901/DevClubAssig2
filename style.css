@@ -193,7 +193,7 @@ header li a:active {
 	font-weight: bold;
 	width: 40%;
 	outline-offset: 2px;
-	transition: padding 0.4s, border 0.4s, outline-offset 0.2s;
+	transition: padding 0.3s, border 0.3s, outline 0.2s,outline-offset 0.2s;
 }
 
 #bio h1:hover {
@@ -224,7 +224,7 @@ header li a:active {
 	margin-top: 5px;
 	position: relative;
 	width: 75vw;
-	margin-right: 20px;
+	margin-left: 13vw;
 	float: right;
 	border: 1px solid white;
 	border-left: 0;
@@ -334,7 +334,7 @@ img {
 	align-items: center;
 }
 
-#timeline p{
+#timeline p {
 	box-shadow: none;
 }
 
@@ -358,7 +358,7 @@ img {
 	border-radius: 20px;
 }
 
-.container::before{
+.container::before {
 	content: '';
 	width: 2vw;
 	height: 2vw;
@@ -370,11 +370,11 @@ img {
 	border: 0.2vw solid white;
 }
 
-.container h3::before{
+.container h3::before {
 	content: '';
 	position: absolute;
 	width: 0;
-	height:0;
+	height: 0;
 
 }
 
@@ -384,12 +384,12 @@ img {
 	margin-left: -25vw;
 }
 
-.lcontent::before{
+.lcontent::before {
 	margin-left: 18.75vw;
 }
 
-.lcontent h3::before{
-	margin-left:17vw;
+.lcontent h3::before {
+	margin-left: 17vw;
 	margin-top: -1%;
 	border: medium solid white;
 	border-width: 10px 0 10px 10px;
@@ -400,12 +400,12 @@ img {
 	margin-right: -25vw;
 }
 
-.rcontent::before{
+.rcontent::before {
 	margin-left: -6.1vw;
-} 
+}
 
-.rcontent h3::before{
-	margin-left:-2.7vw;
+.rcontent h3::before {
+	margin-left: -2.7vw;
 	margin-top: -1%;
 	border: medium solid white;
 	border-width: 10px 10px 10px 0;
@@ -439,18 +439,15 @@ img {
 .fa {
 	margin: 20px 5px;
 	border: 1px solid rgb(255, 255, 255);
-	/* border-radius: 200vw;	 */
+	border-radius: 200vw;	
 	padding: 1%;
-	width: 2vw;
-	text-align: center;
 	text-decoration: none;
 	transition: opacity 0.5s;
-
 }
 
 .fa:hover {
 	opacity: 0.5;
-	transform: scale(1.1);
+	transform: scale(1.15);
 	border-color: black;
 	box-shadow: 0 0 5px #706c5e;
 }
