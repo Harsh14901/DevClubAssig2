@@ -309,8 +309,8 @@ header li a:active {
 }
 
 img {
-	height: 60vh;
-	width: 40vw;
+	height: auto;
+	width: 40%;
 	margin: 10px 20px;
 	border: 10px solid #D3D7CFFF;
 	filter: drop-shadow(0 10px 7px black);
